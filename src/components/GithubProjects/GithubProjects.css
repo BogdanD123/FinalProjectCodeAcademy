@@ -1,0 +1,31 @@
+.githubContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+}
+.singleCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--color-background);
+  border-radius: 7px;
+  width: 450px;
+  height: 550px;
+  margin: 0 25px;
+  padding: 16px;
+  background-color: var(--color-background);
+}
+.githubTitle {
+  color: var(--color-titles);
+  margin: 5px 10px;
+}

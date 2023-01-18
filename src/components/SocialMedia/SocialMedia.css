@@ -1,0 +1,60 @@
+.socialMediaContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pages {
+  margin-bottom: 0.25px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: silver;
+}
+.icons {
+  margin: 0 0 0 15px;
+}
+.facebook:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: var(--color-accent-blue);
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  transition: width 0.3s ease-in;
+}
+.instagram:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent-red);
+  transition: width 0.3s ease-in;
+}
+.linkedin::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--color-titles);
+  height: 2px;
+  transition: width 0.3s ease-in;
+}
+
+.pages:hover:after {
+  width: 100%;
+}
+.socialTitle {
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing: 0.8px;
+  font-size: 1.2em;
+  color: rgba(128, 128, 128, 0.682);
+  width: 100%;
+  margin: 16px 0;
+}

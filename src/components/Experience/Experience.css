@@ -1,0 +1,28 @@
+.experienceContentContainer {
+  position: relative;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+}
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+}
+.experienceTitle {
+  color: var(--color-titles);
+}
+.experienceText {
+  background-color: var(--color-background);
+  box-shadow: 1px 1px 1px 0.3px rgb(188 188 188 / 30%);
+  border-radius: 2px;
+  padding: 6px;
+  color: var(--color-blueish);
+}
+
+.pictureOfMe {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
