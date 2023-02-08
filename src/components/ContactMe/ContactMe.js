@@ -5,7 +5,6 @@ import MyResume from "../../assets/Bogdan's Resume.pdf";
 import "./ContactMe.css";
 import "../../index.css";
 
-//////////This is the Contact page///////////
 function ContactMe() {
   return (
     <section

@@ -6,5 +6,6 @@ export const useHandleThemeContext = () => {
   const toggleTheme = () => {
     setBackgroundTheme(!backgroundTheme);
   };
+
   return { backgroundTheme, toggleTheme };
 };

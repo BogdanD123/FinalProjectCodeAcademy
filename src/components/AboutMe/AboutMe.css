@@ -2,22 +2,31 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.aboutMeImage {
+.aboutMeContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
   margin: 0 1.5rem;
 }
 .aboutMeText {
+  text-align: center;
+  background-color: var(--color-background);
+  color: var(--color-blueish);
   width: 700px;
   height: 200px;
-  background-color: var(--color-background);
   margin: 0.5rem 0.8rem;
-  color: var(--color-blueish);
+  padding: 11px;
+  transition: background-color 0.3s ease;
+}
+.aboutMeText:hover {
+  background-color: var(--color-hover-text);
 }
 
 .somethingAboutMeTitle {
+  font-size: 2ch;
   color: var(--color-titles);
   margin: 0.5rem 1rem;
 }
@@ -33,7 +42,94 @@
   letter-spacing: 0.6px;
 }
 .Me {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   border-radius: 6rem 6rem 0rem 0rem;
+  transition: transform 0.4s ease-in;
+}
+
+.Me:hover {
+  transform: rotate(-10deg);
+}
+.toggleLanguage {
+  cursor: pointer;
+  color: var(--color-blueish);
+  transition: color 0.3s ease;
+  width: max-content;
+}
+.toggleLanguage:hover {
+  color: var(--color-hover-text);
+}
+
+@media screen and (max-width: 1160px) {
+  .aboutMeContentContainer {
+    top: auto;
+    height: 135vh;
+  }
+  .aboutMeContent {
+    flex-direction: column;
+  }
+
+  .aboutMeText {
+    width: 100%;
+    height: max-content;
+  }
+}
+
+@media all and (max-width: 970px) {
+  .aboutMeText {
+    font-size: 14.5px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .toggleLanguage {
+    font-size: 1.5ch;
+  }
+
+  .somethingAboutMeTitle {
+    font-size: 1.7ch;
+  }
+  .Me {
+    width: 350px;
+    height: 350px;
+  }
+  .aboutMeText {
+    font-size: 1.5ch;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .toggleLanguage {
+    font-size: 1.4ch;
+  }
+
+  .somethingAboutMeTitle {
+    font-size: 1.5ch;
+  }
+
+  .Me {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aboutMeText {
+    font-size: 1.3ch;
+  }
+}
+@media all and (max-width: 520px) {
+  .toggleLanguage {
+    font-size: 1.2ch;
+  }
+
+  .somethingAboutMeTitle {
+    font-size: 1.3ch;
+  }
+  .aboutMeText {
+    font-size: 1.2ch;
+  }
+  .Me {
+    width: 270px;
+    height: 270px;
+  }
 }

@@ -13,12 +13,17 @@
   --color-titles: rgb(84, 233, 233);
   --color-hover: rgb(245, 245, 245);
   --color-accent-red: rgba(252, 0, 0, 0.8);
-  --color-accent-yellow: rgba(227, 252, 0, 0.866);
+  --color-accent-yellow: rgb(227, 252, 0);
   --color-accent-blue: rgba(0, 155, 252, 0.8);
   --color-black-transparent: rgba(0, 0, 0, 0.663);
   --color-blueish: rgb(147, 214, 214);
   --color-silver: rgb(177, 175, 175);
   --color-buttons: rgba(123, 219, 234, 0.389);
+  --color-hover-text: rgba(31, 92, 109, 0.719);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,17 +35,15 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   background-attachment: fixed;
-  background-image: url("https://media.istockphoto.com/id/496790012/vector/seamless-pattern-with-wood-texture.jpg?b=1&s=612x612&w=0&k=20&c=Tdze4OveEhLNLdt6O8ml_eHRF2110ZxbzYwHJDx0Y8U=");
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
-html {
-  scroll-behavior: smooth;
+  background-image: url(./assets/backgroundPhoto.jpg);
+  background-size: contain;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

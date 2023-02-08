@@ -5,10 +5,10 @@
 }
 
 .light {
-  background-color: rgba(113, 112, 112, 0.94);
+  background-color: rgba(48, 47, 47, 0.923);
 }
 .dark {
-  background-color: rgba(40, 38, 38, 0.923);
+  background-color: rgba(0, 0, 0, 0.918);
 }
 section {
   height: 120vh;
