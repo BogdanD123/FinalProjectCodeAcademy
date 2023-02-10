@@ -1,18 +1,16 @@
 .conctactMeContainer {
   display: flex;
   align-items: flex-end;
-  margin-top: 5px;
+  justify-content: flex-end;
 }
 .contactForm {
-  display: flex;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: var(--color-black-transparent);
   width: 100%;
   height: 50%;
-  bottom: 0;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .email {
@@ -48,4 +46,74 @@
 }
 .cvIcon {
   margin: 0 3px;
+}
+
+@media all and (max-width: 860px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+    background-color: var(--color-black-transparent);
+    width: 100%;
+    height: 50%;
+  }
+  .emailText {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .resumeContainer {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+
+  .resume {
+    position: relative;
+    top: 1rem;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+  }
+
+  .socialMediaContainer {
+    font-size: 13px;
+    margin-left: 15px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .contactForm {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .emailText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  .resumeContainer {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+
+  .resume {
+    position: relative;
+    top: 1rem;
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+  }
+
+  .socialMediaContainer {
+    font-size: 10px;
+    margin-left: 15px;
+  }
 }

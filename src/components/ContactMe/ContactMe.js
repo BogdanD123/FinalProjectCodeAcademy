@@ -7,11 +7,7 @@ import "../../index.css";
 
 function ContactMe() {
   return (
-    <section
-      id="contactme"
-      className="conctactMeContainer"
-      style={{ height: "100vh" }}
-    >
+    <section id="contactme" className="conctactMeContainer">
       <form className="contactForm">
         <div className="emailText">
           Here's my E-mail Address, how you can contact me:
